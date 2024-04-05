@@ -81,14 +81,14 @@ persistence:
   models: 
     enabled: true
     annotations: {}
-    storageClass: hostPath
+    storageClass: microk8s-hostpath-data
     accessModes: ReadWriteMany
     size: 10Gi
     globalMount: /models
   output:
     enabled: true
     annotations: {}
-    storageClass: hostPath
+    storageClass: microk8s-hostpath-data
     accessModes: ReadWriteMany
     size: 5Gi
     globalMount: /tmp/generated
