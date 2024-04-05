@@ -7,6 +7,9 @@ deployment:
   env:
     threads: 4
     context_size: 512
+    http_proxy: http://hpeproxy.its.hpecorp.net:8080/
+    https_proxy: http://hpeproxy.its.hpecorp.net:8080/
+    no_proxy: argo-cd-argocd-applicationset-controller,argo-cd-argocd-dex-server,argo-cd-argocd-redis,argo-cd-argocd-repo-server,argo-cd-argocd-server,localhost,127.0.0.1,ponkots01,127.0.1.1,16.171.32.68,10.0.0.0/8,192.168.0.0/16,172.16.0.0/16
   modelsPath: "/models"
   download_model:
     # To use cloud provided (eg AWS) image, provide it like: 1234356789.dkr.ecr.us-REGION-X.amazonaws.com/busybox
