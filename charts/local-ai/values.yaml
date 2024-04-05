@@ -37,12 +37,11 @@ resources:
 # Prompt templates to include
 # Note: the keys of this map will be the names of the prompt template files
 promptTemplates:
-  {}
-  # ggml-gpt4all-j.tmpl: |
-  #   The prompt below is a question to answer, a task to complete, or a conversation to respond to; decide which and write an appropriate response.
-  #   ### Prompt:
-  #   {{.Input}}
-  #   ### Response:
+  ggml-gpt4all-j.tmpl: |
+    The prompt below is a question to answer, a task to complete, or a conversation to respond to; decide which and write an appropriate response.
+    ### Prompt:
+    {{.Input}}
+    ### Response:
 
 # Models to download at runtime
 models:
@@ -52,7 +51,7 @@ models:
   # The list of URLs to download models from
   # Note: the name of the file will be the name of the loaded model
   list:
-  #  - url: "https://gpt4all.io/models/ggml-gpt4all-j.bin"
+    - url: "https://gpt4all.io/models/ggml-gpt4all-j.bin"
       # basicAuth: base64EncodedCredentials
 
 initContainers: []
